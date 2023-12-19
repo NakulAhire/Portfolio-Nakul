@@ -1,0 +1,234 @@
+/* Global Styles */
+body {
+	font-family: Arial, sans-serif;
+    background-image: url("");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), #110255, #140139);
+	color: rgb(252, 252, 252);
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+header {
+	background-color: #8e8c8c;
+	color: #fff;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    float: right;
+}
+
+nav li {
+	display: inline-block;
+    left: inherit;
+	margin-left: 30px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+section {
+	margin-top: 80px;
+	padding: 50px;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+/* Home Section */
+.intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.intro img {
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	object-fit: cover;
+}
+
+/* Projects Section */
+.project {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.project img {
+	width: 800px;
+	height: 450px;
+	object-fit: cover;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+#modeling {
+	overflow-x: scroll;
+	text-align: center;
+	display: block;
+	text-align: center;
+}
+
+.modeling-box {
+	display: flex;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.modeling-box img {
+	flex: 0 0 auto;
+	width: 400px;
+	height: 400px;
+	margin-right: 35px;
+}
+
+/* Resume Section */
+.resume {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.resume h2 {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.resume ul {
+	list-style: disc;
+	display: inline-block;
+}
+
+/* Social Section */
+.social {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.social img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	object-fit: cover;
+}
+
+.social ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.social li {
+	margin-right: 20px;
+}
+
+.social a {
+	color: #333;
+	text-decoration: none;
+}
+
+/* Feedback Section */
+.feedback {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.feedback h2 {
+	margin-bottom: 20px;
+}
+
+.feedback form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.feedback label {
+	margin-bottom: 10px;
+}
+
+.feedback input, .feedback textarea {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 10px;
+	background-color: #bdb1b1;
+}
+
+.feedback input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.feedback input[type="submit"]:hover {
+	background-color: #555;
+}
+
+/* Footer */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+	section {
+		padding: 20px;
+	}
+
+	.intro img {
+		width: 150px;
+		height: 150px;
+	}
+
+	.project img {
+		width: 300px;
+		height: 200px;
+	}
+
+	.social img {
+		width: 150px;
+		height: 150px;
+	}
+
+	.feedback input, .feedback textarea {
+		width: 100%;
+	}
+}
